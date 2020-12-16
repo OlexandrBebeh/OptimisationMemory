@@ -85,14 +85,13 @@ I optimazed this code and as I say higher, code and actions in it too small, so 
 {
     auto start_time = std::chrono::high_resolution_clock::now();
     int* a = new int[10, 10];
-    int res = 0;
 
 
-    for (int i = 0; i < 10; i++)
+    for (register  int i = 0; i < 10; i++)
     {
-        for (int j = 0; j < 10; j++)
+        for (register  int j = 0; j < 10; j++)
         {
-            a[j, i]++;
+            a[i,j]++;
             
         }
     }
